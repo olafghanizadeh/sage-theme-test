@@ -1,0 +1,54 @@
+/** Colors */
+$brand-primary:         #27ae60;
+$card-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+$body-bg:       #fcfcfc;
+$enable-shadows: true;
+
+/** Typography */
+$line-height-base: 1.9;
+$font-family-sans-base: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$font-family-serif: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+$heavy-font-weight: 900;
+
+.entry-content p {
+  font-family: $font-family-serif;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 2rem;
+}
+
+.entry-content a {
+  border-bottom: 2px solid #000;
+}
+
+@mixin article-headings($size) {
+  font-family: $font-family-sans-base;
+  font-weight: $heavy-font-weight * $size;
+  font-size: 4rem * $size;
+  margin-top: 2rem;
+}
+
+article.post h1 {
+  @include article-headings(1);
+}
+
+article.post h2 {
+  @include article-headings(0.9);
+}
+
+span.category {
+  text-transform: uppercase;
+  color: $brand-primary;
+  font-weight: $heavy-font-weight - 300;
+}
+
+.article-footer {
+  background-color: #fafafa;
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);

@@ -1,0 +1,18 @@
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 500px;
+  background-size: cover;
+}
+
+.svg {
+  height: 250px;
+}
+
+.subtitle-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
